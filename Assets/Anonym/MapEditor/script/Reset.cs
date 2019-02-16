@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Runtime.InteropServices;
 
 public class Reset : MonoBehaviour
 {
 
   //public Image deathImage;
   private AudioSource music;
+
+  [DllImport("__Internal")]
+  private static extern void ReplayEvent();
+
   // Use this for initialization
   void Start()
   {
@@ -30,6 +35,11 @@ public class Reset : MonoBehaviour
     if (music != null) music.volume = 0.1f;
     // if(!music.isPlaying)
     // 	music.UnPause();
+    
+    #if UNITY_WEBGL
+    ReplayEvent();
+    #endif
+
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
   }
 }

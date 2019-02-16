@@ -14,6 +14,9 @@ public class StartButton : MonoBehaviour
     GameObject gmobjct = GameObject.FindWithTag("GameManager");
     Destroy(GameObject.Find("MusicTime"));
     SceneManager.LoadScene("B0.5 - Intro", LoadSceneMode.Single);
+
+    #if UNITY_WEBGL
     StartGameEvent();
+    #endif
   }
 }

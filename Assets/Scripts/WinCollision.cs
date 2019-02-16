@@ -31,7 +31,10 @@ public class WinCollision : MonoBehaviour
       }
       SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
       Debug.Log("Player moving on to level " + nextLevel);
+
+      #if UNITY_WEBGL
       StartLevelEvent(int.Parse(nextLevel));
+      #endif
     }
   }
 

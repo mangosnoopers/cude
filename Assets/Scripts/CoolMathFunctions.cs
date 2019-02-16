@@ -27,7 +27,9 @@ public class CoolMathFunctions : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		#if UNITY_WEBGL
 		CheckDomains();
+		#endif
 	}
 
 	private void CheckDomains() {
