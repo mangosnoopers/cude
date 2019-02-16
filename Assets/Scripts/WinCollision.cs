@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Runtime.InteropServices;
 
 public class WinCollision : MonoBehaviour
 {
@@ -12,15 +13,8 @@ public class WinCollision : MonoBehaviour
 
   int sceneIndex, levelPassed;
 
-  // Use this for initialization
-  void Start()
-  {
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-  }
+  [DllImport("__Internal")]
+  private static extern void StartLevelEvent(int level);
 
   void OnControllerColliderHit(ControllerColliderHit hit)
   {
@@ -37,6 +31,7 @@ public class WinCollision : MonoBehaviour
       }
       SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
       Debug.Log("Player moving on to level " + nextLevel);
+      StartLevelEvent(int.Parse(nextLevel));
     }
   }
 
