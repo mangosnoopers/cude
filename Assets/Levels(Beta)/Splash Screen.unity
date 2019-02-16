@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -268,6 +268,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 26749180}
+  - {fileID: 2089343459}
   - {fileID: 1138746126}
   - {fileID: 464436830}
   m_Father: {fileID: 0}
@@ -436,7 +437,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 105547178}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -454,11 +455,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac2fca120dba8645b0f1ca295bdf994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: {fileID: 1138746125}
+  nextScene: {fileID: 2089343458}
   endOfSceneLocation: 
   currSceneTime: 0.5
   skipFade: 0
-  spaceToSpeedUp: 1
+  spaceToSpeedUp: 0
 --- !u!114 &464436832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,12 +598,40 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 702729971}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4ae8273c6c904f5687c553577fd553a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: B0 - Menu
+--- !u!1 &794231073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1370741370}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794231074}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &794231074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1370741370}
+  m_GameObject: {fileID: 794231073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &955609921
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9697f1ffb631a34e9fb6fd3f12febef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abValueToReference: 0
 --- !u!4 &955609923
 Transform:
   m_ObjectHideFlags: 0
@@ -669,6 +697,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bf849918ea549978fd3ed6c8652430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  domains:
+  - https://www.coolmath-games.com
+  - www.coolmath-games.com
+  - edit.coolmath-games.com
+  - www.stage.coolmath-games.com
+  - edit-stage.coolmath-games.com
+  - dev.coolmath-games.com
+  - m.coolmath-games.com
+  - https://www.coolmathgames.com
+  - www.coolmathgames.com
+  - edit.coolmathgames.com
+  - www.stage.coolmathgames.com
+  - edit-stage.coolmathgames.com
+  - dev.coolmathgames.com
+  - m.coolmathgames.com
 --- !u!1001 &1106554417
 Prefab:
   m_ObjectHideFlags: 0
@@ -757,7 +800,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 105547178}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -914,7 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b89b45dd3e0044990b89980139759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 2.3
+  delayTime: 4.6
 --- !u!82 &1978124119
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1023,3 +1066,121 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2089343458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089343459}
+  - component: {fileID: 2089343464}
+  - component: {fileID: 2089343463}
+  - component: {fileID: 2089343462}
+  - component: {fileID: 2089343461}
+  - component: {fileID: 2089343460}
+  m_Layer: 5
+  m_Name: CoolMathScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2089343459
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089343458}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 105547178}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2089343460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089343458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac2fca120dba8645b0f1ca295bdf994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: {fileID: 1138746125}
+  endOfSceneLocation: 
+  currSceneTime: 2.5
+  skipFade: 0
+  spaceToSpeedUp: 0
+--- !u!114 &2089343461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089343458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebe259354a61234398f12e4964e375f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeRate: 0
+--- !u!95 &2089343462
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089343458}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a6f6dbf069ccc142aeeb21f14d14f56, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2089343463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089343458}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 93e57558b8220394aa66a896c7a1b7cd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2089343464
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089343458}
+  m_CullTransparentMesh: 0
