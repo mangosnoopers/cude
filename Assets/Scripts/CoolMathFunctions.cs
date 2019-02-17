@@ -18,7 +18,8 @@ public class CoolMathFunctions : MonoBehaviour {
 		"www.stage.coolmathgames.com",
 		"edit-stage.coolmathgames.com",
 		"dev.coolmathgames.com",
-		"m.coolmathgames.com"   
+		"m.coolmathgames.com",
+		"localhost"
 	}; 
 
 	[DllImport("__Internal")]
