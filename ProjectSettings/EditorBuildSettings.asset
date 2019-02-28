@@ -38,23 +38,23 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels(Beta)/B10.unity
     guid: c3eecb8e48332483abc2dd4cf9a8cdd1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Levels(Beta)/B11.unity
-    guid: 874d9974c1a0b014ea3c37e594a01fab
-  - enabled: 1
-    path: Assets/Levels(Beta)/B12.unity
     guid: 89672aeb6d4884635bf9020eee19b5e8
   - enabled: 1
-    path: Assets/Levels(Beta)/B13.unity
+    path: Assets/Levels(Beta)/B12.unity
     guid: 2628e2f6300b5458b907a9222951fb57
   - enabled: 1
-    path: Assets/Levels(Beta)/B14.unity
+    path: Assets/Levels(Beta)/B13.unity
     guid: 4f3b15d616a2a1545bd4862fcbcd4551
   - enabled: 1
-    path: Assets/Levels(Beta)/B15.unity
+    path: Assets/Levels(Beta)/B14.unity
     guid: 3ace43d740272456bbf5a27aa82239c4
   - enabled: 1
-    path: Assets/Levels(Beta)/B16.unity
+    path: Assets/Levels(Beta)/B15.unity
     guid: a0cd1bb1dd422124aa84e9b24482c056
   - enabled: 1
     path: Assets/Levels(Beta)/B17.unity
@@ -62,24 +62,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels(Beta)/B18.unity
     guid: 4d7757274acc53d4cab6af763db2ed09
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Levels(Beta)/B19.unity
-    guid: 6c4d800493dc2a54bb3dcae08fb745be
-  - enabled: 1
-    path: Assets/Levels(Beta)/B20.unity
     guid: 2274bd9bbdb6b4eb2b56478482224311
   - enabled: 1
-    path: Assets/Levels(Beta)/B21.unity
+    path: Assets/Levels(Beta)/B20.unity
     guid: f138e533f6ada47fb96d9fe061c42a91
+  - enabled: 1
+    path: Assets/Levels(Beta)/B21.unity
+    guid: 5f89c9f514338b547a0ca77a77a09de5
   - enabled: 1
     path: Assets/Levels(Beta)/B22.unity
     guid: 8232693ae18516543a29a1b96ace028e
   - enabled: 1
     path: Assets/Levels(Beta)/B23.unity
     guid: 74bde036290213c4f9b8d8b741737d8d
-  - enabled: 1
-    path: Assets/Levels(Beta)/B24.unity
-    guid: a5c9e77a09d444dc49402846db14e9b3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Levels(Beta)/B25.unity
     guid: 3acfe06bf17adb949985e0921309e7f9

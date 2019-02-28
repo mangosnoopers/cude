@@ -1,0 +1,13 @@
+{
+"companyName": "Mango Snoopers",
+"productName": "A Lonely Alpaca",
+"dataUrl": "alpaca_web_competition.data.unityweb",
+"wasmCodeUrl": "alpaca_web_competition.wasm.code.unityweb",
+"wasmFrameworkUrl": "alpaca_web_competition.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#828080",
+"cacheControl": {"default": "must-revalidate"}
+}
