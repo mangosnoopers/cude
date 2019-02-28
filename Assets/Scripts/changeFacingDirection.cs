@@ -53,7 +53,6 @@ public class changeFacingDirection : MonoBehaviour
     }
     else if (fall_diff < 0.1f)
     {
-      print("not falling");
       animator.SetBool("is_falling", false);
       started_falling = false;
       fall_accumulation = 0;

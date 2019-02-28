@@ -83,7 +83,6 @@ namespace Anonym.Isometric
       }
 
       lastFacing = Facing.PosX;
-      continuousMovement = false;
       didFall = false;
 
       wallBlocks = GameObject.FindGameObjectsWithTag("Wall");
@@ -823,65 +822,34 @@ namespace Anonym.Isometric
 
       lastFacing = newFacing;
       oldLoc = GetCurrAlpacaLocation();
-      continuousMovementSecondCheck = !isFalling(newFacing) && !blockInFront(newFacing);
       return didHitWall || isWallBelowMovement || didRotate || didJump || didHighlight;
-      //return didRotate || didJump || didHitUnjumpableStaticBlock || didHighlight;
-    }
-
-    void KeyPressedOnce()
-    {
-      if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-      {
-        continuousMovement = !NonMovement(Facing.PosZ);
-      }
-      if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-      {
-        continuousMovement = !NonMovement(Facing.NegZ);
-      }
-      if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-      {
-        continuousMovement = !NonMovement(Facing.PosX);
-        //inputProcess();
-      }
-      if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-      {
-        continuousMovement = !NonMovement(Facing.NegX);
-      }
     }
 
     void InputProcess()
     {
-      KeyPressedOnce();
       HighlightWhereToDrop();
       LevelsOneToFiveHelper();
+      bool shouldMove = false;
 
-      if (continuousMovement)
+      if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
       {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-          MovementKeyPressed(Facing.PosZ);
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-          MovementKeyPressed(Facing.NegZ);
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-          MovementKeyPressed(Facing.PosX);
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-          MovementKeyPressed(Facing.NegX);
-        }
-
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow) ||
-            Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow) ||
-            Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow) ||
-            Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-
-          ShouldHighlightPlayerBlock(lastFacing, false, Vector3.zero);
-        }
+        shouldMove = !NonMovement(Facing.PosZ);
+      }
+      if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+      {
+        shouldMove = !NonMovement(Facing.NegZ);
+      }
+      if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+      {
+        shouldMove = !NonMovement(Facing.PosX);
+      }
+      if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+      {
+        shouldMove = !NonMovement(Facing.NegX);
+      }
+    
+      if (shouldMove) {
+        inputProcess();
       }
 
       if (Input.GetKeyDown(KeyCode.Space) || doubleClickDetected)
@@ -917,8 +885,8 @@ namespace Anonym.Isometric
       bool bShifted = Input.GetKey(KeyCode.LeftShift);
       System.Action<InGameDirection> Do;
       System.Func<KeyCode, bool> GetKeyMethod;
-      if (continuousMovementSecondCheck)
-      {//(target.bContinuousMovement){
+      if (target.bContinuousMovement)
+      {
         Do = ContinuousMove;
         GetKeyMethod = Input.GetKey;
       }
