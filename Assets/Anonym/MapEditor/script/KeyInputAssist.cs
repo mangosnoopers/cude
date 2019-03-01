@@ -621,15 +621,15 @@ namespace Anonym.Isometric
     {
       string levelName = SceneManager.GetActiveScene().name;
 
-      if (levelName.Equals("B1") || levelName.Equals("B2") || levelName.Equals("B3") || levelName.Equals("B4") || levelName.Equals("B5"))
-      {
-        LevelsOneToFiveSetNormalSprites();
+      // if (levelName.Equals("B1") || levelName.Equals("B2") || levelName.Equals("B3") || levelName.Equals("B4") || levelName.Equals("B5"))
+      // {
+      //   LevelsOneToFiveSetNormalSprites();
 
-        setWASD(Facing.PosX);
-        setWASD(Facing.NegX);
-        setWASD(Facing.PosZ);
-        setWASD(Facing.NegZ);
-      }
+      //   setWASD(Facing.PosX);
+      //   setWASD(Facing.NegX);
+      //   setWASD(Facing.PosZ);
+      //   setWASD(Facing.NegZ);
+      // }
     }
 
     bool isFacingEdge(Vector3 currLocation, Facing facing)
