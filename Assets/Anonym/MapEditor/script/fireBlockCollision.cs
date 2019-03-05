@@ -3,30 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class fireBlockCollision : MonoBehaviour {
+public class fireBlockCollision : MonoBehaviour
+{
 
-    bool fireCollision = false;
-	// Use this for initialization
-	void Start () {
-        
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-    }
+  public bool fireCollision = false;
 
-    void OnControllerColliderHit(ControllerColliderHit hit)
+  void Start()
+  {
+    Debug.Log("fireBlockCollision start");
+  }
+
+  void OnControllerColliderHit(ControllerColliderHit hit)
+  {
+
+    if (hit.collider.tag == "FireBlock")
     {
-        
-        if (hit.collider.tag == "FireBlock")
-        {
-            fireCollision = true;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+      fireCollision = true;
+      //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+  }
 
-    public bool hasCollided(){
-        return fireCollision;
-    }
+  public bool hasCollided()
+  {
+    return fireCollision;
+  }
 }

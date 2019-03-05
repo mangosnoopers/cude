@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels(Beta)/Splash Screen.unity
-    guid: f498bb913e118c94c926b8d761b427a5
+    path: Assets/Levels(Beta)/B0 - Menu.unity
+    guid: e1f4c21026f494361bf629228ae812c9
+  - enabled: 1
+    path: Assets/Levels(Beta)/B0.5 - Intro.unity
+    guid: 5684dcf2c3107354fb75f058f17d667d
   - enabled: 1
     path: Assets/Levels(Beta)/B1.unity
     guid: ca315a053fe5ec941923920c21b37a20
@@ -38,9 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels(Beta)/B10.unity
     guid: c3eecb8e48332483abc2dd4cf9a8cdd1
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Levels(Beta)/B11.unity
     guid: 89672aeb6d4884635bf9020eee19b5e8
@@ -57,14 +57,14 @@ EditorBuildSettings:
     path: Assets/Levels(Beta)/B15.unity
     guid: a0cd1bb1dd422124aa84e9b24482c056
   - enabled: 1
+    path: Assets/Levels(Beta)/B16.unity
+    guid: 7f992bf5c3b60b8408d686ea635c295f
+  - enabled: 1
     path: Assets/Levels(Beta)/B17.unity
     guid: d0a84f9ebe2210b49846d0bdd2badda6
   - enabled: 1
     path: Assets/Levels(Beta)/B18.unity
     guid: 4d7757274acc53d4cab6af763db2ed09
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Levels(Beta)/B19.unity
     guid: 2274bd9bbdb6b4eb2b56478482224311
@@ -80,9 +80,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels(Beta)/B23.unity
     guid: 74bde036290213c4f9b8d8b741737d8d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Levels(Beta)/B24.unity
+    guid: cfefe32bd1fbe514aae660d84648f6d5
   - enabled: 1
     path: Assets/Levels(Beta)/B25.unity
     guid: 3acfe06bf17adb949985e0921309e7f9
@@ -90,15 +90,15 @@ EditorBuildSettings:
     path: Assets/Levels(Beta)/B99.unity
     guid: a18838358f75c204183890894f04f11c
   - enabled: 1
-    path: Assets/Levels(Beta)/B0 - Menu.unity
-    guid: e1f4c21026f494361bf629228ae812c9
-  - enabled: 1
-    path: Assets/Levels(Beta)/B0.5 - Intro.unity
-    guid: 5684dcf2c3107354fb75f058f17d667d
-  - enabled: 1
     path: Assets/Levels(Beta)/End Credits.unity
     guid: 30ebc46f634a41144a4b22210de39451
   - enabled: 1
     path: Assets/Levels(Beta)/Level Select Menu.unity
     guid: 28f1a7d38f549d64a86656b0215c8e77
+  - enabled: 1
+    path: Assets/Levels(Beta)/Splash Screen.unity
+    guid: f498bb913e118c94c926b8d761b427a5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
